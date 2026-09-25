@@ -1,0 +1,8 @@
+*.db
+*.db-wal
+*.db-shm
+.venv/
+__pycache__/
+.pytest_cache/
+anti-slop
+Junior SE Test V2.pdf
