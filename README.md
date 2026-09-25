@@ -51,6 +51,3 @@ curl -s localhost:8000/events/evt_... | head -c 500
 .venv/bin/python -m pytest tests/ -q
 ```
 9 tests, mocked customer endpoints (no network): ingest + pending status, success, retry-then-success, terminal failure, per-customer FIFO, cross-customer isolation, idempotent ingest, HMAC, manual retry.
-
-## What I'd do next (out of 3h scope)
-- Per-endpoint circuit breaker + admin DLQ view; Postgres + dedicated worker for multi-instance; Prometheus metrics (`delivered_total`, `failed_total`, `retry_queue_depth`); customer dashboard.
